@@ -1,0 +1,481 @@
+/*!
+Theme Name: niomax
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.1
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: niomax
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+niomax is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+body{
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway !important;
+	font-weight: 600 !important;
+	letter-spacing: .5px;
+	transition: .3s;
+}
+
+h1 {
+	font-size: 48px !important;
+}
+
+h2 {
+    font-size: 42px !important;
+}
+
+p, span, a, li {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+}
+
+li {
+    list-style-type: none !important;
+}
+a {
+    text-decoration:  none !important;
+    cursor: pointer;
+}
+
+img.icon {
+    width: 25px;
+}
+
+.dft-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* CTA Button */
+.btn-cta {
+    background-color: #13A958;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #13A958;
+    border-radius: 50px;
+    text-decoration: none;
+	text-transform: capitalize;
+    transition: .3s;
+}
+
+.btn-cta:hover {
+    background-color: #ffffff;
+    color: #13A958;
+    padding: 6px 22px;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+}
+
+/* Start Header CSS */
+nav.navbar {
+    background-color: #062727;
+    padding: 15px 0;
+}
+
+ul#menu-primary li {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+ul#menu-primary li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+ul#menu-primary li a:hover {
+    text-decoration: none;
+    color: #13A958;
+    margin: 0 20px;
+}
+
+/* End Header CSS */
+
+/* Start hero section CSS */
+.hero-section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: fadeInOut 15s infinite;
+	z-index: 1;
+}
+
+.hero-content {
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	color: white;
+	z-index: 2;
+}
+
+.hero-bg.bg1 {
+    background-image: 
+        linear-gradient(270deg, rgba(6, 39, 39, 0) 1.59%, rgba(6, 39, 39, 0.8) 100%),
+        url('assets/img/bg1.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.hero-bg.bg2 {
+    background-image: 
+        linear-gradient(270deg, rgba(6, 39, 39, 0) 1.59%, rgba(6, 39, 39, 0.8) 100%),
+        url('assets/img/bg2.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+	animation-delay: 5s;
+}
+
+.hero-bg.bg3 {
+    background-image: 
+        linear-gradient(270deg, rgba(6, 39, 39, 0) 1.59%, rgba(6, 39, 39, 0.8) 100%),
+        url('assets/img/bg3.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+	animation-delay: 10s;
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 1;
+	}
+	33% {
+        opacity: 1;
+    }
+    48% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* End hero section CSS */
+
+/* Start feature section CSS */
+.feature-section {
+    margin-top: -8%;
+    position: relative;
+    z-index: 3;
+}
+
+.feature-box {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0px 20px 0 #0000000f;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.feature-box:hover {
+    border: 1px solid #13A958;
+}
+
+.feature-box img {
+	height: auto !important;
+}
+
+.feature-box h5 {
+	font-weight: 600 !important;
+}
+
+.feature-box:hover h5 {
+    color:#13A958;
+}
+/* End feature section CSS */
+
+/* Start about section CSS */
+.about-info {
+    margin-bottom: 25px;
+    line-height: 26px;
+}
+
+.about-info span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div.abt-green {
+    width: 10px;
+    height: 10px;
+    background: #13A958;
+    margin-right: 10px;
+}
+
+ul.abt-info-icon li {
+    font-size: 14px;
+    font-weight: 600;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+ul.abt-info-icon li img {
+    margin-right: 10px;
+}
+
+.abt-box {
+    padding: 15px 10px;
+    border: 1px solid #e5e7ebed;
+    border-radius: 5px;
+	margin-bottom: 25px;
+    transition: .3s;
+}
+
+.abt-box:hover {
+    border: 1px solid #13A958;
+}
+
+.abt-box h6{
+    transition: .3s;
+}
+
+.abt-box:hover h6{
+    color: #13A958;
+}
+
+.abt-bg {
+    background-image: url('assets/img/about-image.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+}
+
+.abt-img {
+    position: relative;
+}
+
+img.market-place {
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+img.green-dot {
+    position: absolute;
+    bottom: -25px;
+    right: -35px;
+}
+/* End about section CSS */
+
+/* Start cta section CSS */
+.cta-section {
+	position: relative;
+	background: url('assets/img/cta-bg.jpg') top no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+  
+.cta-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(6, 39, 39, 0.7);
+	z-index: 1;
+}
+
+.cta-section > * {
+	position: relative;
+	z-index: 2;
+}
+/* End cta section CSS */
+
+/* Start video section CSS */
+.video-inner {
+    position: relative;
+    width: 80% !important;
+    margin: auto;
+}
+
+.our-history {
+	position: relative;
+	height: 50vh;
+	background-image: url('assets/img/video-thumb.png');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	z-index: 2;
+}
+
+.our-history button {
+	color: #13A958;
+	position: relative;
+	font-size: 18px;
+	z-index: 3;
+	transition: .3s;
+}
+
+.our-history button:hover {
+	color: #fff;
+}
+
+.our-history::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(6, 39, 39, 0.7);
+	z-index: 1;
+}
+
+img.vd-img-1 {
+    position: absolute;
+    left: -10px;
+    bottom: -20px;
+}
+
+img.vd-img-2 {
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    width: 200px;
+}
+/* End video section CSS */
+
+/* Start blog section CSS */
+.blog.dft-section {
+    background: #F5F6F6;
+}
+
+.blog-box {
+    background-color: #fff;
+    padding: 25px;
+	margin-bottom: 25px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+	transition: .3s;
+}
+
+.blog-box:hover {
+    border: 1px solid #13A958;
+}
+
+.blog-box:hover h5{
+    color: #13A958;
+}
+
+.blog-box img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* End blog section CSS */
+
+/* Start footer section CSS */
+ul#menu-primary-1, ul#menu-primary-2 {
+    padding: 0;
+}
+
+ul#menu-primary-1 li a, ul#menu-primary-2 li a {
+    color: #cacaca;
+    transition: .2s;
+    line-height: 2;
+}
+
+ul#menu-primary-1 li a:hover, ul#menu-primary-2 li a:hover {
+    color: #fff;
+}
+
+ul.wp-block-social-links .wp-social-link {
+    background-color: #ffffff00;
+    border: 1px solid #ffffff69;
+    color: #ffffffcc;
+    transition: .3s;
+}
+
+ul.wp-block-social-links .wp-social-link:hover {
+    background-color: #13A958;
+    border: 1px solid #13A958;
+    color: #FFF;
+}
+
+a.wp-block-social-link-anchor {
+    font-size: 16px;
+}
+
+label.sub-label {
+    width: 100%;
+    height: auto;
+    display: flex !important;
+    position: relative;
+    overflow: hidden;
+    margin: 0 !important;
+    border-radius: 3px;
+}
+
+input.sub-email {
+    width: 100%;
+    height: auto;
+    border: 0;
+    padding: 5px 8px;
+}
+
+input.ft-sub-btn {
+    background-color: #13A958;
+    color: #fff;
+    border: 0;
+}
+
+/* End footer section CSS */
+
+/* Start Responsive CSS */
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+	{
+        max-width: 1124px !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .green-dot
+	{
+        display: none;
+    }
+}
+/* End Responsive CSS */
